@@ -36,7 +36,7 @@ public class ColorWindowPanel extends JPanel {
 		public void mouseMoved(MouseEvent e) {
 			Dimension d = getSize();
 			a = fitPanelWidthForRGBvalueR(d.getWidth());
-			b = fitPanelHeightForRGBValueG(d.getWidth());
+			b = fitPanelHeightForRGBValueG(d.getHeight());
 			setBackground(new Color((int) (e.getPoint().x * a), (int) (e.getPoint().y * b), mouseWheelRGBValueB));
 		}
 
